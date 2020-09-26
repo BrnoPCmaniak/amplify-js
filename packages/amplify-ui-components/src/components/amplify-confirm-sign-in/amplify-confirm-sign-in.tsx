@@ -48,6 +48,7 @@ export class AmplifyConfirmSignIn {
       type: 'code',
       required: true,
       handleInputChange: event => this.handleCodeChange(event),
+      inputProps: {'autocomplete':'one-time-code'},
     },
   ];
   /** Cognito user signing in */

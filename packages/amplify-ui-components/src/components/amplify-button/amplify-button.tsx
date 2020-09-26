@@ -6,7 +6,8 @@ import { IconNameType } from '../amplify-icon/icons';
 @Component({
   tag: 'amplify-button',
   styleUrl: 'amplify-button.scss',
-  shadow: true,
+  shadow: false, // Fix Shadow DOM autofill
+  scoped: true,
 })
 export class AmplifyButton {
   @Element() el!: HTMLAmplifyButtonElement;

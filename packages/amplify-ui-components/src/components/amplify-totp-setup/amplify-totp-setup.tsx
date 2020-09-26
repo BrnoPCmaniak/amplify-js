@@ -20,6 +20,7 @@ const logger = new Logger('TOTP');
 export class AmplifyTOTPSetup {
   private inputProps: object = {
     autoFocus: true,
+    'autocomplete': 'one-time-code',
   };
 
   /** Used in order to configure TOTP for a user */

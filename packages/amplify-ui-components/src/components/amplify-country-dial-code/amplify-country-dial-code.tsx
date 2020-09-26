@@ -5,7 +5,8 @@ import { COUNTRY_DIAL_CODE_SUFFIX } from '../../common/constants';
 
 @Component({
   tag: 'amplify-country-dial-code',
-  shadow: true,
+  shadow: false, // Fix Shadow DOM autofill
+  scoped: true,
 })
 export class AmplifyCountryDialCode {
   /** The ID of the field.  Should match with its corresponding input's ID. */

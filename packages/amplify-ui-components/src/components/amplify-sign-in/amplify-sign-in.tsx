@@ -145,6 +145,7 @@ export class AmplifySignIn {
           handleInputChange: this.handleFormFieldInputChange('email'),
           inputProps: {
             'data-test': 'sign-in-email-input',
+            'autocomplete': 'email',
           },
         });
         break;
@@ -155,6 +156,7 @@ export class AmplifySignIn {
           handleInputChange: this.handleFormFieldInputChange('phone_number'),
           inputProps: {
             'data-test': 'sign-in-phone-number-input',
+            'autocomplete': 'tel-national',
           },
         });
         break;
@@ -166,6 +168,7 @@ export class AmplifySignIn {
           handleInputChange: this.handleFormFieldInputChange('username'),
           inputProps: {
             'data-test': 'sign-in-username-input',
+            'autocomplete': 'username',
           },
         });
         break;

@@ -13,7 +13,8 @@ const logger = new Logger('amplify-select');
 @Component({
   tag: 'amplify-select',
   styleUrl: 'amplify-select.scss',
-  shadow: true,
+  shadow: false, // Fix Shadow DOM autofill
+  scoped: true,
 })
 export class AmplifySelect {
   /** The options of the select input. Must be an Array of Objects with an Object shape of {label: string, value: string|number} */

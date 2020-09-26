@@ -2,21 +2,16 @@
 
 exports[`amplify-hint spec: Render logic -> renders with hint text FOO 1`] = `
 <amplify-hint>
-  <mock:shadow-root>
-    <div class="hint">
-      <slot></slot>
-    </div>
-  </mock:shadow-root>
-  FOO
+  <!---->
+  <div class="hint">
+    FOO
+  </div>
 </amplify-hint>
 `;
 
 exports[`amplify-hint spec: Render logic -> renders with no hint text 1`] = `
 <amplify-hint>
-  <mock:shadow-root>
-    <div class="hint">
-      <slot></slot>
-    </div>
-  </mock:shadow-root>
+  <!---->
+  <div class="hint"></div>
 </amplify-hint>
 `;

@@ -3,7 +3,8 @@ import { Component, Element, Prop, h } from '@stencil/core';
 @Component({
   tag: 'amplify-section',
   styleUrl: 'amplify-section.scss',
-  shadow: true,
+  shadow: false, // Fix Shadow DOM autofill
+  scoped: true,
 })
 export class AmplifySection {
   @Element() el: HTMLAmplifySectionElement;

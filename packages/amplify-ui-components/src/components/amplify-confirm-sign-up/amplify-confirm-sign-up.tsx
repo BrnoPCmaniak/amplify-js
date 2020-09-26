@@ -87,6 +87,7 @@ export class AmplifyConfirmSignUp {
         handleInputChange: this.handleFormFieldInputChange(`${this.usernameAlias}`),
         value: this.userInput,
         disabled: this.userInput ? true : false,
+        inputProps: {'autocomplete': this.usernameAlias == 'phone_number' ? 'tel-national' : this.usernameAlias}
       },
       {
         type: 'code',
@@ -102,6 +103,7 @@ export class AmplifyConfirmSignUp {
           </div>
         ),
         handleInputChange: this.handleFormFieldInputChange('code'),
+        inputProps: {'autocomplete':'one-time-code'},
       },
     ];
   }

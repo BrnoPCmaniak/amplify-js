@@ -91,6 +91,7 @@ export class AmplifyForgotPassword {
             handleInputChange: this.handleFormFieldInputChange('email'),
             inputProps: {
               'data-test': 'forgot-password-email-input',
+              'autocomplete': 'email',
             },
           },
         ];
@@ -103,6 +104,7 @@ export class AmplifyForgotPassword {
             handleInputChange: this.handleFormFieldInputChange('phone_number'),
             inputProps: {
               'data-test': 'forgot-password-phone-number-input',
+              'autocomplete': 'tel-national',
             },
           },
         ];
@@ -116,6 +118,7 @@ export class AmplifyForgotPassword {
             handleInputChange: this.handleFormFieldInputChange('username'),
             inputProps: {
               'data-test': 'forgot-password-username-input',
+              'autocomplete': 'username',
             },
           },
         ];
@@ -206,6 +209,7 @@ export class AmplifyForgotPassword {
           handleInputChange: this.handleFormFieldInputChange('code'),
           inputProps: {
             'data-test': 'forgot-password-code-input',
+            'autocomplete': 'one-time-code',
           },
         },
         {
@@ -214,6 +218,9 @@ export class AmplifyForgotPassword {
           handleInputChange: this.handleFormFieldInputChange('password'),
           label: I18n.get(Translations.NEW_PASSWORD_LABEL),
           placeholder: I18n.get(Translations.NEW_PASSWORD_PLACEHOLDER),
+          inputProps: {
+            'autocomplete': 'new-password',
+          }
         },
       ];
       this.delivery = data.CodeDeliveryDetails;

@@ -89,7 +89,7 @@ export class AmplifyVerifyContact {
       <div>
         <amplify-input
           inputProps={{
-            autocomplete: 'off',
+            autocomplete: 'one-time-code',
             'data-test': 'verify-contact-code-input',
           }}
           name="code"

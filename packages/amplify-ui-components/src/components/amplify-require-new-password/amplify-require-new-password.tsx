@@ -43,6 +43,7 @@ export class AmplifyRequireNewPassword {
       placeholder: I18n.get(Translations.NEW_PASSWORD_PLACEHOLDER),
       inputProps: {
         'data-test': 'require-new-password-password-input',
+        'autocomplete': 'new-password',
       },
     },
   ];
@@ -80,6 +81,7 @@ export class AmplifyRequireNewPassword {
           handleInputChange: event => this.handleRequiredAttributeInputChange(attribute, event),
           inputProps: {
             'data-test': `require-new-password-${attribute}-input`,
+            'autocomplete': 'new-password',
           },
         };
         this.newFormFields.push(formField);
